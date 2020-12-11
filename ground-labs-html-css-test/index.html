@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Ground Labs</title>
+</head>
+<body>
+   <div id="topBar">
+       <header id="top-bar">
+           <div class="left-action">
+               <ul class="unordered-list">
+                   <li class="sign-in"><a href="">Sign In</a></li>
+               </ul>
+               <nav class="nav-tabbed">
+                    <ul class="nav-wrapper">
+                        <li class="active">
+                            <span class="nav-icon fas fa-play"></span>Simulate</li>
+                        <li><span class="nav-icon far fa-comment-alt"></span>Comment</li>
+                        <li><span class="nav-icon fas fa-code"></span>Spec</li>
+                    </ul>
+               </nav>
+           </div>
+       </header>
+   </div>
+   <div class="canvas">
+       <main class="canvas-main-container">
+            <section class="canvas-wrapper"> 
+                <section class="canvas-container">
+                    <section class="preview-container">
+                        <div class="view-canvas-container">
+                            <div class="view-canvas">
+                                <div class="view-menu"> 
+                                    <div class="view-menu-items">
+                                        <div class="active">Analytics</div>
+                                        <div class="inactive">Manager</div>
+                                        <span class="help-text">Help</span>
+                                    </div>
+                                </div>
+                                <div class="view-sub-menu">
+                                    <div class="view-sub-menu-1">User Security</div>
+                                    <div class="view-sub-menu-2">App Security</div>
+                                    <div class="view-sub-menu-3">User Operations</div>
+                                    <div class="view-sub-menu-4">App Operation</div>
+                                </div>
+                                <div class="row dashboard">
+                                    <div class="col-md-4 title">
+                                        <span class="text">User Access Summary</span>
+                                        <img class="info-icon" src="icons/tooltip-867402822cb1a5e144be49964422624d-3acb4d.png" alt="NA">
+                                        <span class="sub-text">2.4 Transactions</span>
+                                    </div>
+                                    <div class="col-md-12 card-section">
+                                        <div class="card malicious-access" >
+                                            <div class="card-body">
+                                                <span class="card-title">Malicious Access</span>
+                                                <h4 class="card-text">0</h4>
+                                                <div class="card-footer-red"><img class="card-footer-img" src="icons/graph-down.png" alt=""><p>0</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="card external-access" >
+                                            <div class="card-body">
+                                                <span class="card-title">External Access</span>
+                                                <h4 class="card-text">0</h4>
+                                                <div class="card-footer-yellow"><img class="card-footer-img" src="icons/graph-down.png" alt=""><p>0</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="card block-url" >
+                                            <div class="card-body">
+                                                <span class="card-title">Block URL</span>
+                                                <h4 class="card-text">72</h4>
+                                                <div class="card-footer-black"><img class="card-footer-img" src="icons/graph-down.png" alt=""><p>5</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="card authorised-access" >
+                                            <div class="card-body">
+                                                <span class="card-title">Authorised Access</span>
+                                                <h4 class="card-text">3500</h4>
+                                                <div class="card-footer-green"><img class="card-footer-img" src="icons/graph-down.png" alt=""><p>2000</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-section">
+                                        <div class="table-left">
+                                            <p>Daily Access Log</p>
+                                            <span>29 September 2020</span>
+                                            <div class="table-body">
+                                                <table class="table">
+                                                    <tr>
+                                                        <th>TARGET</th>
+                                                        <th>USER</th>
+                                                        <th>ACTIVITY</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows File Share</td>
+                                                        <td>Jane</td>
+                                                        <td class="activity">1234</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows File Share</td>
+                                                        <td>Jane</td>
+                                                        <td class="activity">1234</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows File Share</td>
+                                                        <td>Jane</td>
+                                                        <td class="activity">1234</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows File Share</td>
+                                                        <td>Jane</td>
+                                                        <td class="activity">1234</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows File Share</td>
+                                                        <td>Jane</td>
+                                                        <td class="activity">1234</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows File Share</td>
+                                                        <td>Jane</td>
+                                                        <td class="activity">1234</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows File Share</td>
+                                                        <td>Jane</td>
+                                                        <td class="activity">1234</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows File Share</td>
+                                                        <td>Jane</td>
+                                                        <td class="activity">1234</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows File Share</td>
+                                                        <td>Jane</td>
+                                                        <td class="activity">1234</td>
+                                                    </tr>
+                                                </table>
+                                                
+                                            </div>
+                                            <div>
+                                                <p class="access-log">All Access Logs</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-right">
+                                            <p>High Risk Access</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+       </main>
+   </div>
+</body>
+</html>
